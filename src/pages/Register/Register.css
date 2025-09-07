@@ -1,0 +1,93 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem; /* space between logo and form */
+}
+
+.register-page {
+  min-height: 80vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+/* Card styling */
+.register-card {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  max-height: 500px;       /* optional: scrollable card */
+  overflow-y: auto;
+}
+
+/* Light theme */
+.register-card.light {
+  background-color: #fff;
+  color: #111827;
+}
+.register-card.light input {
+  background-color: #fff;
+  color: #111827;
+}
+
+/* Dark theme */
+.register-card.dark {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+.register-card.dark input {
+  background-color: #374151;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+}
+.register-card.dark .form-check-label {
+  color: #e5e7eb;
+}
+
+/* Optional: spacing for CustomButton */
+.w-100 {
+  width: 100%;
+}
+
+/* Style for Create Account link (if you want similar link style) */
+.create-account a {
+  color: inherit; /* inherit text color from card/theme */
+  text-decoration: none; /* remove underline */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.create-account a:hover {
+  color: #6366F1; /* indigo hover color */
+  text-decoration: underline;
+}
+
+/* Optional: scrollbar styling */
+/* Custom thinner and smaller scrollbar thumb */
+.register-card::-webkit-scrollbar {
+  width: 6px; /* keeps it narrow */
+}
+
+.register-card::-webkit-scrollbar-thumb {
+  background-color: rgba(99, 102, 241, 0.6);
+  border-radius: 3px;
+  min-height: 30px; /* ensures thumb isn't too tall */
+}
+
+/* Optional: hide track background */
+.register-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem; /* space between logo and form */
+}
+

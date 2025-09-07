@@ -1,0 +1,69 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem; /* space between logo and form */
+}
+
+.login-page {
+  min-height: 80vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+/* Card styling */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme */
+
+.login-card.light {
+  background-color: #fff;
+  color: #111827;
+}
+.login-card.light input {
+  background-color: #fff;
+  color: #111827;
+}
+
+
+/* Dark theme */
+
+.login-card.dark {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+.login-card.dark input {
+  background-color: #374151;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+}
+.login-card.dark .form-check-label {
+  color: #e5e7eb;
+}
+
+/* Optional: spacing for CustomButton */
+.w-100 {
+  width: 100%;
+}
+
+/* Style for Create Account link */
+.create-account a {
+  color: inherit; /* inherit text color from card/theme */
+  text-decoration: none; /* remove underline */
+  font-weight: 500; /* optional: make it slightly bold */
+  transition: color 0.3s ease;
+}
+
+.create-account a:hover {
+  color: #6366F1; /* indigo hover color */
+  text-decoration: underline; /* optional hover effect */
+}

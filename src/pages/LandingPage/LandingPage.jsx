@@ -1,5 +1,5 @@
 import landingVideo from "../../assets/videos/landingPagevideo.mp4";
-import CustomButton from "../../context/customButton"; // ✅ make sure this path is correct
+import CustomButton from "../../context/customButton"; 
 
 const LandingPage = ({ theme }) => {
   return (
@@ -35,7 +35,10 @@ const LandingPage = ({ theme }) => {
 
       {/* ✅ Replaced with CustomButton */}
       <CustomButton theme={theme} >
-        Sign In
+          <a href="/register" style={{textDecoration:"none",color:"white"}}>
+             Sign In
+          </a>
+      
       </CustomButton>
 
       {/* Heading */}

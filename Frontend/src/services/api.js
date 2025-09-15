@@ -4,7 +4,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://lunacloud.onrender.com/api", // backend base URL
+  baseURL: "https://lunacloud.onrender.com", // backend base URL
 });
 
 // Auth token helper

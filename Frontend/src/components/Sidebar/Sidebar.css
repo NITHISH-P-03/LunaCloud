@@ -1,0 +1,100 @@
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  min-width: 200px;
+  height: calc(100vh - 70px); /* 70px = navbar height */
+  padding: 2rem 1rem;
+  position: fixed;
+  top: 70px; /* start below navbar */
+  left: 0;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Light theme */
+.sidebar.light {
+  background: linear-gradient(180deg, #e1e3e6, #c0d4f5); 
+  color: #111827;
+}
+
+.sidebar.light li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Dark theme */
+.sidebar.dark {
+  background: linear-gradient(180deg, #171819, #394e6e);
+  color: #e5e7eb;
+}
+
+.sidebar.dark li:hover {
+  background-color: #374151;
+}
+
+/* List styling */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+/* ✅ Make New button big */
+.sidebar .custom-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.sidebar .custom-button:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive: shrink sidebar on smaller screens */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 120px;   /* smaller than before */
+    padding: 1rem 0.4rem;
+  }
+
+  .sidebar .custom-button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .sidebar ul li {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 70px;   /* much slimmer for mobile */
+    padding: 0.5rem 0.2rem;
+  }
+
+  .sidebar .custom-button {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+
+  .sidebar ul li {
+    font-size: 0.65rem;
+    text-align: center; /* center text since sidebar is slim */
+  }
+}

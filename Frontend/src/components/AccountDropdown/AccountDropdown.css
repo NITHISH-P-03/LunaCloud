@@ -1,0 +1,35 @@
+.account-dropdown .dropdown-header {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.account-dropdown .dropdown-text {
+  font-size: 0.85rem;
+  margin: 0;
+  padding: 0 1rem 0.5rem 1rem;
+  color: gray;
+}
+
+.account-dropdown .btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.account-dropdown .dropdown-menu {
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Light theme */
+.navbar-light .account-dropdown .btn {
+  color: #212529;
+}
+
+/* Dark theme */
+.navbar-dark .account-dropdown .btn {
+  color: #eee;
+}

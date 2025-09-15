@@ -5,7 +5,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import cloudicon from "../../assets/images/cloudicon.png";
 import { ThemeContext } from "../../context/ThemeContext";
-import AccountDropdown from "../AccountDropdown/AccountDropDown";
+import AccountDropdown from "../AccountDropdown/AccountDropdown";
 
 const DashBoardNavbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
